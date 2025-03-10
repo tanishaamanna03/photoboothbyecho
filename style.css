@@ -185,6 +185,19 @@ header h2 {
     background-color: #ffb6c1;
 }
 
+.logo[src*="tws.png"] {
+    border: 0.1in #ffb6c1; 
+    width: 39.3%; 
+    height: 80px;
+    background-color: #ffb6c1;
+}
+
+.logo[src*="boynextdoor.png"] {
+    border: 0.1in #ffb6c1; 
+    width: 39.3%; 
+    height: 80px;
+    background-color: #ffb6c1;
+}
 .logo[src*="sserafim.png"] {
     border: 0.1in #ffb6c1; 
     width: 39.3%; 
