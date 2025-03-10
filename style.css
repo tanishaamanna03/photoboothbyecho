@@ -217,6 +217,25 @@ header h2 {
     background-color: #ff66b2;
 }
 
+/* Take More Pictures Button */
+.retake-button {
+    font-size: 1rem; /* Adjust text size */
+    padding: 10px 20px;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #FF3399; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.retake-button:hover {
+    background-color: #ff66b2; 
+}
+
+
 /* Camera Section */
 .video-container {
     position: relative;
@@ -233,7 +252,7 @@ header h2 {
     cursor: pointer;
     border-radius: 8px;
     margin-top: 20px; /* Space above button */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-left: auto; /* Center align the button */
     margin-right: auto; /* Center align the button */
     display: block; /* Ensure the button is a block element for centering */
