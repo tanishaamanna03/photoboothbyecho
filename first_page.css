@@ -1,0 +1,144 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Luminari', sans-serif;
+    background: linear-gradient(to right, #fac0f8, #b3d7ef);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cherry-blossom-sticker {
+    position: absolute; /* Positions the image relative to the body */
+    top: 0px; /* Adjust this value to move the image down or up */
+    left: 0px; /* Adjust this value to move the image left or right */
+    width: 450px; /* Adjust the size of the image */
+    height: 370px; /* Keeps the image aspect ratio */
+    z-index: 0; 
+}
+
+.husky-sticker {
+    position: absolute; /* Positions the image relative to the body */
+    bottom: 0px; /* Adjust this value to move the image down or up */
+    right: 0px; /* Adjust this value to move the image left or right */
+    width: 320px; /* Adjust the size of the image */
+    height: 400px; /* Keeps the image aspect ratio */
+    z-index: 0; 
+}
+
+.container {
+    width: 300%;
+    max-width: 900px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all child elements */
+    text-align: auto; 
+}
+
+* Header Styling */
+header h1 {
+    font-size: 2.5rem;
+    color: #070607;
+    margin-bottom: 10px;
+}
+
+.caption {
+    font-size: 1.2rem;
+    color: #070305;
+    margin-bottom: 20px;
+}
+
+/* Camera Section Styling */
+.camera-section {
+    margin-bottom: 30px;
+}
+
+
+#video {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Take a Picture Button Styling */
+#captureButton {
+    background-color: #FF3399;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 10px; /* Add margin to create space between the button and photo strip */
+}
+
+#captureButton:hover {
+    background-color: #ff66b2;
+}
+
+/* Photo Strip Layout */
+.photo-strip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.photo-box {
+    width: 220px;  /* Increase width to make the photos a bit wider */
+    height: 175px;
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    border-top: 0.1in solid #170004;  
+    border-left: 0.1in solid #170004;
+    border-right: 0.1in solid #170004; 
+    border-bottom: 0.1in solid #170004; 
+    margin-bottom: 10 px;
+}
+
+/* Generate Photo Strip Button - Centered */
+#generateStripButton {
+    background-color: #FF3399;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Space between the photo strip and button */
+    width: auto; /* Natural width */
+    display: block; /* Ensures it behaves as a block element */
+    margin: auto; /* Center the button horizontally */
+}
+
+/* Button Hover Effect */
+#generateStripButton:hover {
+    background-color: #ff66b2;
+}
+
+/* Footer Section Styling */
+footer {
+    margin-top: 20px;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: #ff66b2;
+}

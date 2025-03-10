@@ -1,0 +1,240 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Luminari', sans-serif;
+    background: linear-gradient(to right, #fac0f8, #b3d7ef);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cherry-blossom-sticker {
+    position: absolute; /* Positions the image relative to the body */
+    top: 0px; /* Adjust this value to move the image down or up */
+    left: 0px; /* Adjust this value to move the image left or right */
+    width: 500px; /* Adjust the size of the image */
+    height: 400px; /* Keeps the image aspect ratio */
+    z-index: 0; 
+}
+
+.husky-sticker {
+    position: absolute; /* Positions the image relative to the body */
+    bottom: 0px; /* Adjust this value to move the image down or up */
+    right: 0px; /* Adjust this value to move the image left or right */
+    width: 320px; /* Adjust the size of the image */
+    height: 400px; /* Keeps the image aspect ratio */
+    z-index: 0; 
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Header Styling */
+header h2 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 50px; /* Increased space between heading and photo strip */
+}
+
+.sticker-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .sticker {
+    width: 50px;
+    height: auto;
+    background-color: none;
+    border: none;
+    cursor: grab;
+  }
+  
+  .sticker.dragging {
+    opacity: 0.5;
+}
+
+/* Container for Photos and Logo with Border */
+.photo-border-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.125in solid #ffb6c1;  /* Pastel pink border around the photos */
+    border-radius: 0; /* Remove rounded corners */
+    padding: 0; /* Remove internal padding so the border is continuous */
+    background-color: white;
+    width: auto;
+    margin-bottom: 1.9in; 
+    position: relative;
+}
+
+/* Photo Strip Section - Center-aligned */
+.photo-strip {
+    display: flex;
+    flex-direction: column; /* Stack the photos vertically */
+    align-items: center; /* Center align the photos */
+    width: 100%; /* Ensure the strip takes up the full width of the container */
+}
+
+.photo-box {
+    width: 220px;  /* Increase width to make the photos a bit wider */
+    height: 175px;
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    border-top: 0.125in solid #ffb6c1; /* Pastel pink border at the top of each photo */
+    border-left: 0.125in solid #ffb6c1; /* Pastel pink border on the left of each photo */
+    border-right: 0.125in solid #ffb6c1; /* Pastel pink border on the right of each photo */
+    border-bottom: 0.125in solid #ffb6c1; /* Pastel pink border at the bottom of each photo */
+    margin-bottom: 0; /* Remove space between photos */
+}
+
+/* Logo Container inside Border */
+.logo-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.logo {
+    
+    border: 0.125in solid #ffb6c1;
+    background-color: #ffb6c1;
+    width: auto;          /* Maintain aspect ratio */
+    height: auto;         /* Maintain aspect ratio */
+    margin-bottom: 20px;
+}
+
+/* Individual Borders for Each Logo */
+.logo[src*="blackpink.png"] {
+    border: 0.1in #ffb6c1; 
+    width: 39.3%; 
+    height: 80px;
+    background-color: #ffb6c1;
+}
+
+.logo[src*="bts.png"] {
+    border: 0.1in #ffb6c1; 
+    width: 39.3%; 
+    height: 80px;
+    background-color: #ffb6c1;
+}
+
+.logo[src*="nct127.png"] {
+    border: 0.1in #ffb6c1; 
+    width: 39.3%; 
+    height: 80px;
+    background-color: #ffb6c1;
+}
+
+.logo[src*="aespa.png"] {
+    border: 0.1in #ffb6c1; 
+    width: 39.3%; 
+    height: 80px;
+    background-color: #ffb6c1;
+}
+
+.logo[src*="enhypen.png"] {
+    border: 0.1in #ffb6c1; 
+    width: 39.3%; 
+    height: 80px;
+    background-color: #ffb6c1;
+}
+
+.logo[src*="txt.png"] {
+    border: 0.1in #ffb6c1; 
+    width: 39.3%; 
+    height: 80px;
+    background-color: #ffb6c1;
+}
+
+.logo[src*="straykids.png"] {
+    border: 0.1in #ffb6c1; 
+    width: 39.3%; 
+    height: 80px;
+    background-color: #ffb6c1;
+}
+
+.logo[src*="kasteye.png"] {
+    border: 0.1in #ffb6c1; 
+    width: 39.3%; 
+    height: 80px;
+    background-color: #ffb6c1;
+}
+
+.logo[src*="ateez.png"] {
+    border: 0.1in #ffb6c1; 
+    width: 39.3%; 
+    height: 80px;
+    background-color: #ffb6c1;
+}
+
+.logo[src*="sserafim.png"] {
+    border: 0.1in #ffb6c1; 
+    width: 39.3%; 
+    height: 80px;
+    background-color: #ffb6c1;
+}
+
+/* Adjust bottom border size for the entire container */
+.photo-border-container::after {
+    content: "";
+    display: block;
+    border-bottom: 1.9in solid #ffb6c1; /* Pastel pink border at the bottom */
+    width: 100%;
+}
+
+/* Button Styles */
+.button {
+    background-color: #FF3399;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Space below photos */
+}
+
+.button:hover {
+    background-color: #ff66b2;
+}
+
+/* Camera Section */
+.video-container {
+    position: relative;
+}
+
+#video {
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#changeLogoButton {
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px; /* Space above button */
+    margin-bottom: 20px;
+    margin-left: auto; /* Center align the button */
+    margin-right: auto; /* Center align the button */
+    display: block; /* Ensure the button is a block element for centering */
+}

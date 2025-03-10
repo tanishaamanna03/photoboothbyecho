@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Photo Strip - Kpop Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Cherry Blossom Sticker Image -->
+   <img src="logos/cherry-blossom.png" alt="Cherry Blossom Sticker" class="cherry-blossom-sticker">
+   
+   <!-- Dog Sticker Image -->
+   <img src="logos/dog.png" alt="Husky Sticker" class="husky-sticker">
+
+   
+    <div class="container">
+        <!-- Header Section with cute caption -->
+        <header>
+            <h2 style="font-size: 25px;">✨ Here's Your Kpop Style Photo Strip! ✨ </h2>
+            <p style="font-size: 10px; font-family:verdana; text-align:left"> 👉 After you select your desired Kpop group, you can screenshot the photostrip to save it to your device! </p>
+            <p style="font-size: 10px; font-family:verdana; text-align:left"> 👉 Use the <strong> Change Logo Button </strong> at the bottom to select the group logo! </p>
+            <p style="font-size: 10px; font-family:verdana; text-align:left"> 👉 For mac users, just press <strong>Shift+Command+4</strong> to select the area of the photostrip you want to save!</p>
+            <p style="font-size: 10px; font-family:verdana; text-align:left"> 👉 For windows users, you can use the <strong> Snipping Tool</strong> to select the area of the photostrip you want to save!</p>
+            <br>
+        </header>
+
+        <!-- Photo Strip with 3 photos -->
+        <div id="finalPhotoStrip" class="photo-strip">
+            <div class="photo-box" id="finalPhoto1"></div>
+            <div class="photo-box" id="finalPhoto2"></div>
+            <div class="photo-box" id="finalPhoto3"></div>
+        </div>
+
+        <!-- Logo Section with logo selection -->
+        <div class="logo-container">
+            <img id="logo" src="logos/blackpink.png" alt="Logo" class="logo">
+            <button id="changeLogoButton" class="button">Change Logo</button>
+        </div>
+
+        <!-- Sticker Selection Section -->
+     <div class="sticker-selection">
+         <img src="logos/pinkheart.png" alt="Heart Sticker" class="sticker" id="heartSticker">
+         <img src="logos/cloud.png" alt="Cloud Sticker" class="sticker" id="cloudSticker">
+         <img src="logos/cat.png" alt="Cat Sticker" class="sticker" id="catSticker">
+         <img src="logos/boba.png" alt="Boba Sticker" class="sticker" id="bobaSticker">
+         <img src="logos/sloth.png" alt="Sloth Sticker" class="sticker" id="slothSticker">
+         <img src="logos/squirrel.png" alt="Squirrel Sticker" class="sticker" id="squirrelSticker">
+         <!-- Add more stickers here -->
+     </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <p class="footer-text">Made with 💖 for K-pop lovers everywhere! 🌈</p>
+        </footer>
+    </div>
+
+    <script src="finalScript.js"></script>
+</body>
+</html>
